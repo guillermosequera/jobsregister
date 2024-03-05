@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de trabajos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registro de trabajos</h1>
+    <form id="registro-trabajo">
+        <label for="descripcion">Numero del trabajo:</label>
+        <input id="descripcion" name="descripcion" required></input>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    <div class="authorize_buttons">
+        <p>Sheets API Quickstart</p>
+        
+        <!--Add buttons to initiate auth sequence and sign out-->
+        <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
+        <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
+        
+        <pre id="content" style="white-space: pre-wrap;"></pre>
+    </div>
+
+
+
+
+
+
+
+    
+    <script async defer src="https://apis.google.com/js/api.js" id="gapi"></script>
+    <script async defer src="https://accounts.google.com/gsi/client" id="gis"></script>
+    <script async defer src="/js/auth.js"></script>
+    <script async defer src="/js/sheets.js"></script>
+
+</html>
+</body>
+</html>
